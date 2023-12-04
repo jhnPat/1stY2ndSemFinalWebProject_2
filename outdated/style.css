@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #313131;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #fff
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    background: #313131;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    background: 2980b9;
+    margin: auto;
+}
+
+nav .navbar .logo a {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav .navbar .logotext a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    top: 20px;
+    left: 270px;
+    position: absolute;
+}
+
+nav .navbar .menu {
+    display: flex;
+}
+
+.navbar .menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar .menu li a:hover {
+    text-decoration: underline;
+}
+
+.navbar .menu li a img {
+    width: 50px;
+    border-radius: 20px;
+    position: absolute;
+    top: 15px;
+}
+
+.navbar ul li a img:hover {
+    width: 52px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #2e2d2d;
+}
+
+
+
+
+
+
+
+
+.wrapper {
+    position: fixed;
+    top: 40;
+    left: 300;
+    height: 100%;
+    width: 65%;
+    opacity: 1;
+    clip-path: circle(25px at calc(60% + 45px) 500px);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked~.wrapper {
+    clip-path: circle(500px);
+    background: rgb(255, 255, 255);
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    left: 330px;
+    top: 55px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    left: 330px;
+    top: 55px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked~.menu-btn {
+    background: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2980b9;
+    font-size: 70px;
+}
+
+#Home {
+    background-image: url(Img1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#About {
+    background: #771616;
+}
+
+#Category {
+    background: #e6e6e6;
+}
+
+#Contact {
+    background: #fff;
+}
+
+#Feedback {
+    background: #f2f2f2;
+}
